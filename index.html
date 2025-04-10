@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC56Pm9fgzYTDxE0vUw/mhlYmH0vj1CvTUWglfO9mF5PaTzibilIgrxw0Mvvieg6Xw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <video autoplay muted loop id="bg-video">
+        <source src="Background video.mp4" type="video/mp4" />
+
+    </video>
+
+    <div class="content">
+       <nav class="content-nav">
+            <ul>
+                <li><a href="#welcome-section">Welcome</a></li>
+                <li><a href="#gallery-section">Gallery</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <h1 id="welcome-section"> Discover Art online with us Gallery <br> Featured artists</h1>
+        <dive>
+            <table>
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Artist Name</th>
+                    <th>Address</th>
+                    <th>Email Address</th>
+                    <th>Mobile Phone</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>I</td>
+                    <td>Anya Sharma</td>
+                    <td>42 Willow Creek Lane, Artville, CA 90210</td>
+                    <td>[email address removed]</td>
+                    <td>+1 (555) 123-4567</td>
+                </tr>
+                <tr>
+                    <td>II</td>
+                    <td>Ben Dubois</td>
+                    <td>17 Rue des Beaux-Arts, Paris, France 75006</td>
+                    <td>[email address removed]</td>
+                    <td>+33 6 01 02 03 04</td>
+                </tr>
+                <tr>
+                    <td>III</td>
+                    <td>Kenji Tanaka</td>
+                    <td>8 Sakura Gardens, Kyoto, Japan 606-8225</td>
+                    <td>[email address removed]</td>
+                    <td>+81 90-1234-5678</td>
+                </tr>
+                <tr>
+                    <td>IV</td>
+                    <td>Isabella Rossi</td>
+                    <td>Via del Pittore 5, Florence, Italy 50121</td>
+                    <td>[email address removed]</td>
+                    <td>+39 333 456 7890</td>
+                </tr>
+                <tr>
+                    <td>V</td>
+                    <td>Kwame Nkosi</td>
+                    <td>10 Akachi Crescent, Lagos, Nigeria 100001</td>
+                    <td>[email address removed]</td>
+                    <td>+234 802 345 6789</td>
+                </tr>
+            </tbody>
+        </table></dive>
+        <div class="audio">
+            <audio controls>
+                <source src="adele_send_my_love_to_your_new_lover_mp3_34611.mp3" type="audio/mpeg" />
+            </audio>
+        </div>
+
+        <div class="middle-content">
+            <p id="gallery-section">Gallery </p>
+            <div class="art-image-container">
+                <ol class="art-image-list">
+                    <li><img src="pexels-chai.jpg" alt="art-image"></li>
+                    <li><img src="pexels-w-w-299285-889839.jpg" alt="art-image"></li>
+                    <li><img src="pexels-minan1398-962312.jpg" alt="art-image"></li>
+                    <li><img src="blackgirl.jpg" alt="art-image"></li>
+                </0l>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <section id="registration">
+            <h2>Register Form</h2>
+        
+            <!-- Registration Form Starts Here -->
+            <form style="background-color: transparent;" action="#" method="POST">
+        
+                <!-- Name Field -->
+                <label for="name">Name<span style="color: red;">*</span></label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+        
+                <!-- Email Field -->
+                <label for="email">Email<span style="color: red;">*</span></label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required />
+        
+                <!-- Password Field -->
+                <label for="password">Password<span style="color: red;">*</span></label>
+                <input type="password" id="password" name="password" placeholder="Create a password" minlength="6" required />
+        
+                <!-- Date of Birth Field -->
+                <label for="dob">Date of Birth<span style="color: red;">*</span></label>
+                <input type="date" id="dob" name="dob" required />
+        
+                <!-- Dropdown: Country Selection -->
+                <label for="country">Country<span style="color: red;">*</span></label>
+                <select id="country" name="country" required>
+                    <option value="">-- Select your country --</option>
+                    <option value="sa">South Africa</option>
+                    <option value="us">United States</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="ng">Nigeria</option>
+                </select>
+        
+                <!-- Radio Buttons: Gender -->
+                <label>Gender<span style="color: red;">*</span></label>
+                <div>
+                    <input type="radio" id="male" name="gender" value="male" required />
+                    <label for="male">Male</label>
+        
+                    <input type="radio" id="female" name="gender" value="female" required />
+                    <label for="female">Female</label>
+        
+                    <input type="radio" id="other" name="gender" value="other" required />
+                    <label for="other">Other</label>
+                </div>
+        
+                <!-- Checkboxes: Interests -->
+                <label>Interests</label>
+                <div>
+                    <input type="checkbox" id="news" name="interests" value="news" />
+                    <label for="news">Newsletter</label>
+        
+                    <input type="checkbox" id="updates" name="interests" value="updates" />
+                    <label for="updates">Product Updates</label>
+        
+                    <input type="checkbox" id="offers" name="interests" value="offers" />
+                    <label for="offers">Special Offers</label>
+                </div>
+        
+                <!-- Submit Button -->
+                <button type="submit">Register</button>
+            </form>
+            <!-- Registration Form Ends Here -->
+        
+        </section>
+        
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

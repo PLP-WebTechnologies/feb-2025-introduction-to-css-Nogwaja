@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+#bg-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.content {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    min-height: 100vh;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center;    /* Center items horizontally */
+
+}
+
+.content-nav {
+    background-color: transparent;
+    color: white;
+    width: 120%; /* Take full width of the content area */
+    padding: 10px 20px;
+    margin-bottom: 20px; /* Add some space below the nav */
+    z-index: 2; /* Ensure it's above other content in .content */
+    margin-left: 70%;
+}
+.audio {
+        display: block; /* Make it a block-level element */
+        width: 80%;
+        max-width: 400px;
+        margin: 10% auto; /* Center horizontally with top/bottom margin */
+        border: 1px solid #ccc;
+        background-color: #f0f0f0;
+        border-radius: 0;
+    }
+
+.content-nav ul {
+
+    list-style: none;
+    padding: 0;
+    margin: 0 0;
+    display: flex; /* Arrange links horizontally */
+    justify-content: center; /* Center links */
+}
+
+.content-nav ul li a {
+    border: 1px solid;
+    display: block; /* Make each link a block for easier padding */
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s ease;
+    margin-right: 10px; /* Add space to the right of each link */
+    margin-bottom: 0; /* Add space below each link */
+
+}
+.art-image li {
+    width: 5%;
+    height: 5%;
+}
+
+.content-nav ul li a:hover {
+    background-color: rgba(92, 27, 27, 0.1);
+}
+
+#welcome-section {
+    margin-top: 20px; /* Adjust top margin */
+    margin-bottom: auto; /* Push towards the top */
+    font-size: larger;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center; /* Center the text */
+}
+table{
+    border: 1px solid;
+}
+
+.middle-content {
+    text-align: center;
+    margin: 10%; /* Adjust margins */
+    border: 1px ;
+    background-color: #013310;
+    width: 100%;
+    height: 600%;
+}
+
+#gallery-section {
+    border: 1px solid;
+    border-radius: 0;
+    color: #ffffff;
+    padding: 10px 20px;
+    display: inline-block; /* To center it as a block */
+}
+
+#registration {
+    margin-top: auto; /* Push towards the bottom */
+    text-align: center;
+    padding: 20px;
+    width: 80%;
+    max-width: 400px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 18px;
+    background-color: transparent;
+    border-color: #ffffff;
+    margin-top: 20px;
+}
+
+input, textarea {
+    padding: 15px;
+    border: 1px solid white;
+    border-radius: 4px;
+    background-color: transparent;
+    color: white;
+}
+
+input::placeholder, textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+button {
+    padding: 12px 20px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#gallery-section {
+    border: 1px solid #ffffff;
+    border-radius: 0;
+    color: #ffffff;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.art-image-container {
+    /* Remove absolute positioning which can take elements out of the normal flow */
+    position: relative;
+    width: 100%; /* Make the container take the full width of middle-content */
+    overflow: hidden; /* Prevent potential overflow if images are wider */
+    display: flex; /* Enable horizontal layout */
+    justify-content: center; /* Center images horizontally within the container */
+    align-items: center; /* Vertically align items if needed */
+}
+
+.art-image-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Arrange images in a row */
+    gap: 10px; /* Space between images */
+    /* Remove flex-wrap if you strictly want them in one horizontal line */
+    /* flex-wrap: wrap; */
+}
+
+.art-image-list li {
+    margin: 0;
+    flex-shrink: 0; /* Prevent images from shrinking below their content size */
+}
+
+.art-image-list li img {
+    display: block;
+    height: auto; /* Maintain aspect ratio */
+    /* Set a fixed width for the images to control their horizontal size */
+    width: 200px; /* Adjust this value to fit the desired number of images horizontally */
+    object-fit: cover; /* Crop/scale to cover the container, maintaining aspect ratio */
+    /* OR */
+    /* object-fit: contain; /* Scale down to fit within the container, preserving aspect ratio */
+}
+footer {
+    /* ... other footer styles ... */
+    background-color: rgb(180, 180, 180);
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;    /* Center vertically */
+    flex-direction: column; /* To stack heading and form if needed */
+}
+
+footer #contact {
+    /* Remove any specific positioning that might interfere */
+    margin: 0;
+    text-align: center; /* Center text within the contact section */
+    width: 80%; /* Or a specific width */
+    max-width: 400px;
+}
+
+footer form {
+    /* Adjust margins for spacing from the heading */
+    margin-top: 20px;
+    /* Keep other form styles */
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+}
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: rgba(0, 116, 39, 0.1);
+    font-weight: bold;
+}
